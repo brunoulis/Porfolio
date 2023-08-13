@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Bruno</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/iconbruno.png" alt="">
+            </div>
+            <h1>Bruno Vazquez</h1>
+            <h2>Técnico Superior en Desarrollo de aplicaciones multiplataforma - Técnico de sistemas Microinformaticos</h2>
+            <div class="redes">
+                <a href="https://github.com/brunoulis"><i class="fa-brands fa-github fa-bounce"></i></a>
+                <a href="https://www.instagram.com/brunoulis_/"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+                <a href="https://www.linkedin.com/in/bruno-luis-vazquez-pais-881ba6281/"><i class="fa-brands fa-linkedin-in fa-bounce"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Bruno Vazquez.</span> Apasionado de la programación, me defino por ser una persona con ganas de aprender y con una actitud perseverante y resolutiva. Buena comunicación, trabajo en equipo y capacidad de resolución de problemas.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-11-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +34 727 739 226
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luisvapa2012@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            46702, Gandia, Valencia, C/ Sant Pere 68 2º 4ª
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Programador Full Stack/Backend</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-python"></i>
+                            <span>PYTHON</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-steam-symbol"></i>
+                            <span>STEAM OS (GNU/LINUX)</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>IA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>COCHES</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button id="btnDownloadCV" onclick="descargarCV()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico Superior de Desarrollo de Aplicaciones Multiplataforma</h4>
+                        <span class="casa">IES JAUME II EL JUST</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Durante el período <strong>2020</strong> - <strong>2022</strong>, fui estudiante en el <strong>IES JAUME II EL JUST</strong>, donde cursé el programa de <strong>Técnico Superior de Desarrollo de Aplicaciones Multiplataforma</strong>. Esta etapa fue crucial para mi desarrollo como desarrollador, fortaleciendo mis habilidades en lenguajes como Java, Python, Flutter, Kotlin y C# con Unity, además de explorar diversas tecnologías para aplicaciones multiplataforma.
+                            <br><br>
+                            A través de proyectos colaborativos, diseñé, implementé y probé soluciones tecnológicas para diversas necesidades y desafíos. Además de las habilidades técnicas, cultivé competencias en trabajo en equipo, comunicación y resolución de problemas, enriquecido por la interacción con compañeros y profesores.
+                            <br><br>
+                            Estas bases sólidas adquiridas en el <strong>IES JAUME II EL JUST</strong> son fundamentales en mi carrera. Espero aplicar y expandir estos conocimientos en futuras oportunidades, contribuyendo al emocionante campo del desarrollo de aplicaciones multiplataforma.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Sistemas Microinformáticos y Redes</h4>
+                        <span class="casa">IES JAUME II EL JUST</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>
+                            Durante mi etapa como <strong>Técnico en Sistemas Microinformáticos y Redes</strong> en el <strong>IES JAUME II EL JUST</strong>, tuve la oportunidad de adentrarme en diversos aspectos tecnológicos y desarrollar habilidades fundamentales.
+                            <br><br>
+                            Mi formación abarcó áreas como el diseño y desarrollo web, donde trabajé con HTML y CSS para crear interfaces atractivas y funcionales. Además, adquirí experiencia en la administración de servidores Apache y en la configuración de servidores DNS y DHCP para garantizar una conectividad eficiente y segura en redes. También implementé y administré servicios utilizando la interfaz web de <strong>Webmin</strong>, lo que me permitió gestionar de manera eficiente varios aspectos de los servidores.
+                            <br><br>
+                            Además, adquirí experiencia en la instalación y configuración de sistemas operativos Windows y Linux, así como en la instalación y configuración de redes cableadas e inalámbricas. También aprendí a configurar y administrar dispositivos de red como routers y switches, lo que me permitió comprender mejor el funcionamiento de las redes.
+                            <br><br>
+                            Exploré el mundo de la edición multimedia, utilizando programas de edición de video, audio y foto para crear y modificar contenido multimedia. Sin embargo, tengo un conocimiento profundo del conjunto de herramientas de Microsoft Office, lo que me permite administrar las tareas de oficina de manera eficiente y profesional.
+                            <br><br>
+                            Mi etapa como <strong>Técnico en Sistemas Computacionales y Redes</strong> me ha brindado una base sólida en tecnologías esenciales y habilidades prácticas, lo que ha enriquecido mi perfil como profesional en el mundo de la tecnología.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Full Stack</h4>
+                        <span class="casa">Neverlate</span>
+                        <span class="fecha">Marzo 2023 - Junio 2023</span>
+                        <p>
+                            Durante mis prácticas como <strong>desarrollador multiplataforma</strong> en <strong>Neverlate</strong>, desempeñé un <strong>papel clave</strong> en la mejora de la <strong>eficiencia</strong> y la <strong>innovación tecnológica</strong> dentro de la empresa. Una de mis contribuciones más <strong>notables</strong> es la creación e implementación de <strong>soluciones automatizadas</strong> que agilizan varias tareas operativas.
+                            <br><br>
+                            Uno de los proyectos en los que trabajé fue el <strong>desarrollo de bots personalizados</strong> para extraer automáticamente las <strong>identificaciones de los productos</strong>, lo que hace que la administración de la <strong>tienda en línea sea más eficiente y precisa</strong>. Estos bots han demostrado ser <strong>herramientas valiosas</strong> para aumentar la productividad y minimizar los errores en la gestión de productos.
+                            <br><br>
+                            Además, <strong>lideré el diseño y desarrollo</strong> de un sistema <strong>automatizado de organización de archivos CSV</strong>. La herramienta ha permitido a la empresa organizar y administrar de manera eficiente <strong>grandes cantidades de datos</strong>, lo que ayuda a <strong>optimizar los flujos de trabajo diarios</strong> y reduce significativamente el tiempo dedicado a las tareas administrativas.
+                            <br><br>
+                            Uno de mis <strong>mayores logros</strong> en este puesto fue <strong>implementar el sistema de inicio de sesión</strong> de la <strong>API de Google Analytics mediante PHP</strong>. Esta integración proporciona <strong>información valiosa</strong> sobre el flujo de visitantes a los sitios web corporativos, lo que permite tomar decisiones más informadas y estratégicas para mejorar la experiencia del usuario.
+                            <br><br>
+                            Además de mis responsabilidades técnicas, también tengo la oportunidad de <strong>colaborar en proyectos de desarrollo web</strong> utilizando la plataforma <strong>WordPress</strong>. Desde la etapa de <strong>investigación de palabras clave y recopilación de datos</strong> hasta la <strong>configuración final de sitios web funcionales y atractivos</strong>, participé activamente en todo el proceso. He contribuido al <strong>diseño de interfaces intuitivas y atractivas</strong>, así como a la <strong>gestión de contenido de comercio electrónico</strong>, incluida la combinación de productos con imágenes e información relevante.
+                        </p>    
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Reponedor</h4>
+                        <span class="casa">Carrefour, S.L.</span>
+                        <span class="fecha">Junio 2022 - Agosto 2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico informático</h4>
+                        <span class="casa">PCBox</span>
+                        <span class="fecha">Marzo 2021 - Junio 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Programacion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Programacion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Programacion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Programacion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Programacion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Programacion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/brunoulis"><i class="fa-brands fa-github fa-bounce"></i></a>
+            <a href="https://www.instagram.com/brunoulis_/"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+            <a href="https://www.linkedin.com/in/bruno-luis-vazquez-pais-881ba6281/"><i class="fa-brands fa-linkedin-in fa-bounce"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
