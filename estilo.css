@@ -287,11 +287,11 @@ html{
     100%{width: 89%;}
 }
 
-.skills .skill .photoshop{
+.skills .skill .paqueteoffice{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s paqueteoffice forwards;
 }
-@keyframes photoshop {
+@keyframes paqueteoffice {
     0%{width: 0%;}
     100%{width: 95%;}
 }
