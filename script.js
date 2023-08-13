@@ -28,13 +28,17 @@ function efectoHabilidades() {
         habilidades[2].classList.add("paqueteoffice");
         habilidades[3].classList.add("wordpress");
         habilidades[4].classList.add("java");
-        habilidades[5].classList.add("python");
-        habilidades[6].classList.add("flutter");
-        habilidades[6].classList.add("comunicacion");
-        habilidades[7].classList.add("trabajo");
-        habilidades[8].classList.add("creatividad");
-        habilidades[9].classList.add("dedicacion");
-        habilidades[10].classList.add("proyect");
+        habilidades[5].classList.add("php");
+        habilidades[6].classList.add("git");
+        habilidades[7].classList.add("basesdedatos");
+        habilidades[8].classList.add("comunicacion");
+        habilidades[9].classList.add("trabajo");
+        habilidades[10].classList.add("creatividad");
+        habilidades[11].classList.add("dedicacion");
+        habilidades[12].classList.add("proyect");
+        habilidades[13].classList.add("resolucion");
+        habilidades[14].classList.add("adaptacion");
+        habilidades[15].classList.add("tratoclientes");
     }
 }
 
