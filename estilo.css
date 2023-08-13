@@ -323,6 +323,15 @@ html{
     100%{width: 80%;}
 }
 
+.skills .skill .flutter{
+    width: 0%;
+    animation: 2s flutter forwards;
+}
+@keyframes flutter {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
 .skills .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;

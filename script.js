@@ -29,6 +29,7 @@ function efectoHabilidades() {
         habilidades[3].classList.add("wordpress");
         habilidades[4].classList.add("java");
         habilidades[5].classList.add("python");
+        habilidades[6].classList.add("flutter");
         habilidades[6].classList.add("comunicacion");
         habilidades[7].classList.add("trabajo");
         habilidades[8].classList.add("creatividad");
